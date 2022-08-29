@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c792a9fef9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #3598db;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/APLogo-20-20.png" alt="" width="25%" height="">
+          </a>
+
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item"><i class="fa-brands fa-instagram fa-2xl"></i></li>
+            <li class="list-group-item"><i class="fa-brands fa-linkedin fa-2xl"></i></li>
+            <li class="list-group-item"><i class="fa-brands fa-facebook fa-2xl"></i></li>
+            <li class="list-group-item"><i class="fa-brands fa-github fa-2xl"></i></li>
+            <!-- Button trigger modal -->
+            <li class="list-group-item"><i class="fa-solid fa-user-astronaut fa-2xl" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i></li>
+          </ul>
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Iniciar Sesión</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+        
+                <div class="modal-body">
+
+                  <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                  </div>
+              
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Sign in</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/pexels-kevin-ku-577585.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="tittle-baner">Hard & Soft Skills</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/pexels-kevin-ku-603799.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="tittle-baner">Educación</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/pexels-jorge-jesus-614117.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="tittle-baner">Experiencia</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/pexels-pixabay-270408.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="tittle-baner">Proyectos</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section id="about-me" class="pt-5">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-3">
+            <img src="images/profile_ofi.jpeg" class="rounded-circle w-75" alt="..." title="...">
+            <h5>Erik Alfredo Salvatierra</h5>
+            <p>Full Stack Developer Jr</p>
+          </div>
+          <div class="col-6 mt-4">
+            <h4>Acerca de...</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate 
+              ipsum dicta possimus perspiciatis libero voluptatum natus nostrum, ducimus est, 
+              reiciendis voluptates ad quod dolorem quas eveniet iure hic vitae enim.</p>
+          </div>
+          <div class="col-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="pt-5">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-3 text-center">
+            <h4>Experiencia</h4>  
+          </div>
+        </div> 
+        <div class="row">
+          <div class="col-3 mt-5 text-center">
+            <img src="images/c89f3160cf52610292cba08bdade4241.jpg" class="w-50">
+          </div>
+          <div class="col-6 mt-5">
+            <h5>Trabajo 1 (periodo)</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, 
+              maxime aperiam quaerat labore doloremque et perferendis? Numquam 
+              iusto ipsa minus, facilis dolores debitis assumenda odio provident! 
+              Assumenda ipsam nam expedita.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3 mt-5 text-center">
+            <img src="images/software-house-technology-company-logo-design-template-55cbc4889e1fcd9b63bc2260ec9972c7_screen.jpg" class="w-50">
+          </div>
+          <div class="col-6 mt-5">
+            <h5>Trabajo 2 (periodo)</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, 
+              maxime aperiam quaerat labore doloremque et perferendis? Numquam 
+              iusto ipsa minus, facilis dolores debitis assumenda odio provident! 
+              Assumenda ipsam nam expedita.</p>
+          </div>
+        </div>
+
+        
+        
+      </div>
+      
+    </section>
+
+    <section id="educacion" class="pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 text-center">
+            <h4>Educación</h4>  
+          </div>
+        </div> 
+        <div class="row">
+          <div class="col-3 mt-5 text-center">
+            <img src="images/edu-1659183752919-ArgentinaPrograma.jpg" class="w-50">
+          </div>
+          <div class="col-6 mt-5">
+            <h5>Argentina Programa (periodo)</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, 
+              maxime aperiam quaerat labore doloremque et perferendis? Numquam 
+              iusto ipsa minus, facilis dolores debitis assumenda odio provident! 
+              Assumenda ipsam nam expedita.</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="skills" class="pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 text-center">
+            <h4>Hard && Soft Skills</h4>  
+          </div>
+        </div> 
+
+        <div class="all">
+      
+          <div class="circle-wrap">
+            <div class="circle">
+              <div class="mask half">
+                <div class="fill-1"></div>
+              </div>
+
+              <div class="mask full-1">
+                <div class="fill-1"></div>
+              </div>
+              
+               <!-- Number -->
+              <div class="inside-circle">85%</div>
+           </div> 
+          </div>
+
+          <div class="circle-wrap">
+            <div class="circle">
+              <div class="mask half">
+                <div class="fill-1"></div>
+              </div>
+
+              <div class="mask full-1">
+                <div class="fill-1"></div>
+              </div>
+              
+               <!-- Number -->
+              <div class="inside-circle">50%</div>
+           </div> 
+          </div>
+
+          <div class="circle-wrap">
+            <div class="circle">
+              <div class="mask half">
+                <div class="fill-1"></div>
+              </div>
+
+              <div class="mask full-1">
+                <div class="fill-1"></div>
+              </div>
+              
+               <!-- Number -->
+              <div class="inside-circle">70%</div>
+           </div> 
+          </div>
+
+         </div>
+        
+      
+
+      </div>
+      
+    </section>
+
+    <section id="proyectos" class="pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 text-center">
+            <h4>Proyectos</h4>  
+          </div>
+        </div> 
+
+        <div class="row mt-3 text-center">
+          <div class="col-3 ">
+            <h5>Portfolio Web</h5>
+            
+          </div>
+        </div> 
+        
+        <div class="row mt-3">
+          <div class="col-4 ">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+              Aut ab quia culpa molestias. Eligendi possimus, vel dolorum 
+              maxime inventore aliquam!</p>
+            
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+</html>

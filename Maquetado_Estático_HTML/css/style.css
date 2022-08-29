@@ -1,0 +1,89 @@
+.list-group{
+    --bs-list-group-bg: transparent;
+    --bs-list-group-border-color: transparent;
+}
+.fa-brands{
+    color: white;
+}
+.fa-solid{
+    color: white;
+}
+
+.fa-solid.fa-user-astronaut.fa-2xl:hover{
+    color: rgb(46, 45, 45);
+}
+
+.tittle-baner{
+    background-color: #3598db;
+}
+
+.all{
+    display: flex;
+}
+/* responsive device */
+@media only screen and (max-width: 580px){
+    .all{
+        display: inline;
+    }
+}
+
+.circle-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 160px);
+    grid-gap: 80px;
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 150px;
+    height: 150px;
+    background: #d9d7da;
+    border-radius: 50%;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill-1,
+.circle-wrap .circle .fill-2,
+.circle-wrap .circle .fill-3 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+.circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+}
+
+.mask .fill-1 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #3598db;
+}
+  
+.mask.full-1,
+.circle .fill-1 {
+    animation: fill-1 ease-in-out 3s;
+    transform: rotate(153deg);
+}
+  
+@keyframes fill-1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(153deg);
+    }
+}
+
+.circle-wrap .inside-circle {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    background: #ffffff;
+    line-height: 120px;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 13px;
+    color: rgb(24, 91, 168);
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+}
